@@ -1,0 +1,9 @@
+Host my_linux_last
+    HostName ec2-54-242-171-193.compute-1.amazonaws.com
+    IdentityFile ~/.ssh/em_key.pem
+    User ubuntu
+
+
+Host *
+    ServerAliveInterval 30000
+    ServerAliveCountMax 2

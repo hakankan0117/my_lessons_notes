@@ -1,0 +1,29 @@
+Öncelikle vim editörü şu şekilde kuralım:
+
+sudo apt-get install vim
+
+Kurulum tamamlandıktan sonra home dizinimize gelelim:
+
+cd ~/
+Daha sonra vim editör ile .vimrc dosyasını açalım:
+
+vim .vimrc
+
+i tuşuna basarak insert moda geçelim ve aşağıdaki özelikleri o 
+dosyaya ekleyelim ve sonrasında esc tuşuna basıp :wq yazarak k
+aydedip çıkıyoruz:
+
+syntax on
+colorscheme koehler
+set number
+
+Ben renk olarak koehler stilini seçtim. 
+Siz desert,elflord,torte,delek,evening,pablo,
+morning,peachpuff,murpy gibi farklı renkleri de 
+deneyip beğendiğinizi koehler ile değiştirebilirsiniz.
+
+Kişiselleştirme işte bu kadar kolay. Kullanırken de 
+çok rahat olduğunu farkedeceksinizdir.
+
+Aklınıza takılan bir yer olursa yorum veya iletişim formu 
+yardımıyla ulaşırsanız yardımcı olmaya çalışırım.
