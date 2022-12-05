@@ -1,0 +1,41 @@
+////IF VE ELIF FARKI///
+if bize olası bütün sonuçları listeler, elif ise sadece doğru olan ilk sonucu verir. Bu soyut tanımlamayı biraz daha somutlaştıralım:
+a = int(input("Bir sayı giriniz: "))
+
+if a < 100:
+    print("verdiğiniz sayı 100'den küçüktür.")
+
+if a < 50:
+    print("verdiğiniz sayı 50'den küçüktür.")
+
+if a == 100:
+    print("verdiğiniz sayı 100'dür.")
+
+if a > 100:
+    print("verdiğiniz sayı 100'den büyüktür.")
+
+if a > 150:
+    print("verdiğiniz sayı 150'den büyüktür.")
+Yukarıdaki kodları çalıştırdığımızda, doğru olan bütün sonuçlar listelenecektir. Yani mesela kullanıcı 40 sayısını girmişse, ekrana verilecek çıktı şöyle olacaktır:
+verdiğiniz sayı 100'den küçüktür.
+verdiğiniz sayı 50'den küçüktür.
+Burada 40 sayısı hem 100’den, hem de 50’den küçük olduğu için iki sonuç da çıktı olarak verilecektir. Ama eğer yukarıdaki kodları şöyle yazarsak:
+a = int(input("Bir sayı giriniz: "))
+
+if a < 100:
+    print("verdiğiniz sayı 100'den küçüktür.")
+
+elif a < 50:
+    print("verdiğiniz sayı 50'den küçüktür.")
+
+elif a == 100:
+    print("verdiğiniz sayı 100'dür.")
+
+elif a > 150:
+    print("verdiğiniz sayı 150'den büyüktür.")
+
+elif a > 100:
+    print("verdiğiniz sayı 100'den büyüktür.")
+Kullanıcının 40 sayısını girdiğini varsaydığımızda, bu defa programımımız yalnızca şu çıktıyı verecektir:
+verdiğiniz sayı 100'den küçüktür.
+Gördüğünüz gibi, elif deyimlerini kullandığımız zaman, ekrana yalnızca doğru olan ilk sonuç veriliyor. Yukarıda 40 sayısı hem 100’den hem de 50’den küçük olduğu halde, Python bu sayının 100’den küçük olduğunu görür görmez sonucu ekrana basıp, öteki koşul bloklarını incelemeyi bırakıyor. if deyimlerini arka arkaya sıraladığımızda ise, Python bütün olasılıkları tek tek değerlendirip, geçerli olan bütün sonuçları ekrana döküyor.
